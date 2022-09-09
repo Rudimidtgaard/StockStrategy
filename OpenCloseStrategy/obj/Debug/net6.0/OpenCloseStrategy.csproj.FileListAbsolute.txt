@@ -1,0 +1,15 @@
+C:\GitPrivate\StockStrategy\OpenCloseStrategy\obj\Debug\net6.0\OpenCloseStrategy.csproj.AssemblyReference.cache
+C:\GitPrivate\StockStrategy\OpenCloseStrategy\obj\Debug\net6.0\OpenCloseStrategy.GeneratedMSBuildEditorConfig.editorconfig
+C:\GitPrivate\StockStrategy\OpenCloseStrategy\obj\Debug\net6.0\OpenCloseStrategy.AssemblyInfoInputs.cache
+C:\GitPrivate\StockStrategy\OpenCloseStrategy\obj\Debug\net6.0\OpenCloseStrategy.AssemblyInfo.cs
+C:\GitPrivate\StockStrategy\OpenCloseStrategy\obj\Debug\net6.0\OpenCloseStrategy.csproj.CoreCompileInputs.cache
+C:\GitPrivate\StockStrategy\OpenCloseStrategy\bin\Debug\net6.0\OpenCloseStrategy.exe
+C:\GitPrivate\StockStrategy\OpenCloseStrategy\bin\Debug\net6.0\OpenCloseStrategy.deps.json
+C:\GitPrivate\StockStrategy\OpenCloseStrategy\bin\Debug\net6.0\OpenCloseStrategy.runtimeconfig.json
+C:\GitPrivate\StockStrategy\OpenCloseStrategy\bin\Debug\net6.0\OpenCloseStrategy.dll
+C:\GitPrivate\StockStrategy\OpenCloseStrategy\bin\Debug\net6.0\OpenCloseStrategy.pdb
+C:\GitPrivate\StockStrategy\OpenCloseStrategy\obj\Debug\net6.0\OpenCloseStrategy.dll
+C:\GitPrivate\StockStrategy\OpenCloseStrategy\obj\Debug\net6.0\refint\OpenCloseStrategy.dll
+C:\GitPrivate\StockStrategy\OpenCloseStrategy\obj\Debug\net6.0\OpenCloseStrategy.pdb
+C:\GitPrivate\StockStrategy\OpenCloseStrategy\obj\Debug\net6.0\OpenCloseStrategy.genruntimeconfig.cache
+C:\GitPrivate\StockStrategy\OpenCloseStrategy\obj\Debug\net6.0\ref\OpenCloseStrategy.dll
