@@ -13,12 +13,13 @@ namespace OpenCloseStrategy.Data
 
         public static List<Candle> GetCandles()
         {
+            //Get all candles from DB. For now the data is hardcoded. 
+
             var allCandles = new List<Candle>();
-
-            //Get all candles from DB. For new the data is hardcoded. 
             int counter = 0;
+            string filePath = File.Exists(@"C:\GitPrivate\StockStrategy\CandleData.csv") ? @"C:\GitPrivate\StockStrategy\CandleData.csv" : @"C:\Git\StockStrategy\CandleData.csv";
 
-            foreach (string line in System.IO.File.ReadLines(@"C:\GitPrivate\StockStrategy\CandleData.csv"))
+            foreach (string line in System.IO.File.ReadLines(filePath))
             {
                 counter++;
 

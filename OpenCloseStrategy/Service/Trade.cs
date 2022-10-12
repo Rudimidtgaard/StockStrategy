@@ -27,7 +27,7 @@ namespace OpenCloseStrategy.Service
             return returnCandles;
         }
 
-        public static OpenCloseTradingSession GetOpenCloseTradingSession(DateOnly date, SessionTimeOfDay sessionTimeOfDay)
+        public static OpenCloseTradingSession GetTradingSession(DateOnly date, SessionTimeOfDay sessionTimeOfDay)
         {
             var tradeingSesseion = new OpenCloseTradingSession();
 
@@ -76,7 +76,7 @@ namespace OpenCloseStrategy.Service
             }
 
             //
-            tradeingSesseion.TrendShift;
+            //tradeingSesseion.TrendShift;
 
             return tradeingSesseion;
         }
