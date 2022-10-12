@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "O8sTUNQNG4hbeRB2uqwPWoL6fy8MwaZlqI6xyLCNSj7ueiYxRB1k4Kzf+5LLr2lEFywizWXXrp9uOQgYyb1lJQ==",
+  "dgSpecHash": "AzroNUWDxReXxp9Bf8DvVXiNBEpLY/rha/ztxvvkx0tjaWq8P5VJHEz2slRe1wFrVFoCftl0VcWsVjQb/mt/bw==",
   "success": true,
-  "projectFilePath": "C:\\GitPrivate\\StockStrategy\\OpenCloseStrategy\\OpenCloseStrategy.csproj",
+  "projectFilePath": "C:\\Git\\StockStrategy\\OpenCloseStrategy\\OpenCloseStrategy.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

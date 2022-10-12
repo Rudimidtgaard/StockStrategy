@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\GitPrivate\\StockStrategy\\OpenCloseStrategy\\OpenCloseStrategy.csproj": {}
+    "C:\\Git\\StockStrategy\\OpenCloseStrategy\\OpenCloseStrategy.csproj": {}
   },
   "projects": {
-    "C:\\GitPrivate\\StockStrategy\\OpenCloseStrategy\\OpenCloseStrategy.csproj": {
+    "C:\\Git\\StockStrategy\\OpenCloseStrategy\\OpenCloseStrategy.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\GitPrivate\\StockStrategy\\OpenCloseStrategy\\OpenCloseStrategy.csproj",
+        "projectUniqueName": "C:\\Git\\StockStrategy\\OpenCloseStrategy\\OpenCloseStrategy.csproj",
         "projectName": "OpenCloseStrategy",
-        "projectPath": "C:\\GitPrivate\\StockStrategy\\OpenCloseStrategy\\OpenCloseStrategy.csproj",
-        "packagesPath": "C:\\Users\\RUP\\.nuget\\packages\\",
-        "outputPath": "C:\\GitPrivate\\StockStrategy\\OpenCloseStrategy\\obj\\",
+        "projectPath": "C:\\Git\\StockStrategy\\OpenCloseStrategy\\OpenCloseStrategy.csproj",
+        "packagesPath": "C:\\Users\\Rudim\\.nuget\\packages\\",
+        "outputPath": "C:\\Git\\StockStrategy\\OpenCloseStrategy\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\RUP\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Rudim\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -26,9 +22,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "\\\\pfileserv01\\tool\\nugetserver\\packages": {},
-          "https://api.nuget.org/v3/index.json": {},
-          "https://nuget.org/api/v2": {}
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
