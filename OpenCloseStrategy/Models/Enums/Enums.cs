@@ -14,7 +14,21 @@ namespace OpenCloseStrategy.Models.Enums
             HighHigher = 1,
             HighLower = 2,
             LowHigher = 3,
-            LowLower = 4
+            LowLower = 4,
+            Neutral = 5
+        }
+
+        public enum SessionTrend : byte 
+        {
+            Neutral = 0,
+            GoingUp = 1,
+            GoingDown = 2
+        }
+
+        public enum SessionTimeOfDay : byte
+        {
+            Morning = 1,
+            Afternoon = 2
         }
     }
 }

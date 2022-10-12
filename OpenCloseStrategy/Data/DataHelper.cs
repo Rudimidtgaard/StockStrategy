@@ -63,6 +63,8 @@ namespace OpenCloseStrategy.Data
                     return Trend.HighHigher;
                 if (currentPrice < lastPrice)
                     return Trend.HighLower;
+                if (currentPrice == lastPrice)
+                    return Trend.Neutral;
             }
             else if (type == "Low")
             {
@@ -70,6 +72,8 @@ namespace OpenCloseStrategy.Data
                     return Trend.LowHigher;
                 if (currentPrice < lastPrice)
                     return Trend.LowLower;
+                if (currentPrice == lastPrice)
+                    return Trend.Neutral;
             }
 
             return Trend.Unknown;
