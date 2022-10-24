@@ -14,8 +14,9 @@ namespace OpenCloseStrategy.Models
         public override SessionTimeOfDay TimeOfDay { get; set; }
 
         public SessionTrend StartTrend { get; set; } = SessionTrend.Neutral;
-
-        public DateTimeOffset TrendShift { get; set; }
+        public int StartTrendDiscovered { get; set; }
+        public SessionTrend ShiftTrend { get; set; } = SessionTrend.Neutral;
+        public int ShiftTrendDiscovered { get; set; }
 
         public override List<Candle> Candles { get; set; }
 

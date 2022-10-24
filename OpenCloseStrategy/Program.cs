@@ -26,5 +26,4 @@ var myVar = new List<Candle>();
 
 DateOnly testDay = new DateOnly(2022, 08, 05);
 Enums.SessionTimeOfDay morningSession = Enums.SessionTimeOfDay.Morning;
-
 Trade.GetTradingSession(testDay, morningSession);

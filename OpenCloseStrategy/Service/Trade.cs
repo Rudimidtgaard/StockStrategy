@@ -44,7 +44,7 @@ namespace OpenCloseStrategy.Service
                     TimeOnly morningTimeTo = new TimeOnly(09, 15);
 
                     requestDateTimeFrom = date.ToDateTime(morningTimeFrom);
-                    requestDateTimeTo = date.ToDateTime(morningTimeFrom);
+                    requestDateTimeTo = date.ToDateTime(morningTimeTo);
 
                     tradeingSesseion.Candles = Trade.GetCandlesByDate(requestDateTimeFrom, requestDateTimeTo);
                     break;
@@ -59,26 +59,42 @@ namespace OpenCloseStrategy.Service
                     break;
             }
 
-            foreach(var candle in tradeingSesseion.Candles)
-            {
-                if(candle.HighTrend == Trend.HighHigher && candle.LowTrend == Trend.LowHigher)
-                {
-                    tradeingSesseion.StartTrend = SessionTrend.GoingUp;
-                    break;
-                }
-                if(candle.HighTrend == Trend.HighLower && candle.LowTrend == Trend.LowLower)
-                {
-                    tradeingSesseion.StartTrend = SessionTrend.GoingDown;
-                    break;
-                }
+            var startTrend = GetSessionTrend(tradeingSesseion.Candles);
 
-                tradeingSesseion.StartTrend = SessionTrend.Neutral;
-            }
+            tradeingSesseion.StartTrend = startTrend.trend;
+            tradeingSesseion.StartTrendDiscovered = startTrend.numberOfCandlesForTrend;
 
-            //
-            //tradeingSesseion.TrendShift;
+            // Not the best solution, basically just geting all candles, minus the amount of candles from StartTrendDiscovered
+            //Need to find the opposite of StartTrend. Not the new trend :-/
+            var shiftTrend = GetSessionTrend(tradeingSesseion.Candles.GetRange(tradeingSesseion.StartTrendDiscovered, (tradeingSesseion.Candles.Count() - tradeingSesseion.StartTrendDiscovered)));
+
+            tradeingSesseion.ShiftTrend = shiftTrend.trend;
+            tradeingSesseion.ShiftTrendDiscovered = shiftTrend.numberOfCandlesForTrend;
+
+
+
 
             return tradeingSesseion;
         }
+
+        private static (int numberOfCandlesForTrend, SessionTrend trend) GetSessionTrend(List<Candle> candles)
+        {
+            for (int i = 0; i < candles.Count(); i++)
+            {
+                if (candles[i].HighTrend == Trend.HighHigher && candles[i].LowTrend == Trend.LowHigher)
+                {                
+                    return (i, SessionTrend.GoingUp);
+                }
+                else if (candles[i].HighTrend == Trend.HighLower && candles[i].LowTrend == Trend.LowLower)
+                {
+                    return (i, SessionTrend.GoingDown);
+                }
+            }
+
+            return (0, SessionTrend.Neutral);
+        }
+
+
+
     }
 }
